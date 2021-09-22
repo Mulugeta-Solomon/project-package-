@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
+    <title>Universty Monitor | Universty tracking for Better Education</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script src="./script.js" ></script> -->
+    <script src="https://kit.fontawesome.com/91930e373e.js" crossorigin="anonymous"></script>
+
+</head>
+<body>
+        <div class="master">
+<!-- ================================================================== section 1 navigation ================================================================== -->
+            <nav>
+                <img src="images/logo.png" class="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Hire Me</a></li>
+
+                </ul>
+                <img src="images/moon.png" id="icon">
+            </nav>
+<!-- ================================================================== section 2 info ================================================================== -->
+            <div class="info">
+                <h1>I'm <span>kate</span> Andrew</h1>
+                <p>This is my official Portfolio website to showcase <br> my
+                    all works related to web development and UI desing
+                </p>
+                <a href="#">Download CV</a>
+            </div>
+<!-- ================================================================== section 3 image ================================================================== -->
+            <div class="img-box">
+                <img src="images/pattern.png" alt="person" class="back-img">
+                <img src="images/girl.png" alt="person" class="main-img">
+
+            </div>
+<!-- ================================================================== section 4 links ================================================================== -->
+            <div class="social-links">
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#"><i class="fab fa-behance"></i></a>
+                <a href="#"><i class="fab fa-dribbble"></i></a>
+                <a href="#"><i class="fab fa-flickr"></i></a>
+                
+
+            </div>
+        </div>
+
+<!-- ================================================================== section x script ================================================================== -->
+
+
+    <script>
+        var icon = document.getElementById("icon");
+
+        if(localStorage.getItem("theme") == null){
+            localStorage.setItem("theme ", "dark");
+        }
+
+        let localData = localStorage.getItem("theme");
+        icon.onclick=function(){
+            document.body.classList.toggle("dark-theme");
+            if(document.body.classList.contains("dark-theme")){
+                icon.src ="images/sun.png";
+                localStorage.setItem("theme ", "dark");
+            }else{
+                icon.src ="images/moon.png";
+                localStorage.setItem("theme ", "light");
+            }
+        }
+        if(localData == "light"){
+            icon.src ="images/moon.png";
+            document.body.classList.remove("dark-theme");
+        }else if(localData == "light"){
+            icon.src ="images/sun.png";
+            document.body.classList.add("dark-theme");
+        }else{
+            localStorage.setItem("theme","light");
+        } 
+    </script>    
+</body>
+</html>

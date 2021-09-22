@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon.png" />
+    <title>Universty Monitor | Universty tracking for Better Education</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <!-- <script src="./script.js" ></script> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"rel="stylesheet">
+    <script src="https://kit.fontawesome.com/91930e373e.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+</head>
+
+<body>
+    <div class="product">
+        <div class="product-small-img">
+            <!-- <img src="images/cake-4.jpg" alt=""> -->
+            <img src="images/cake-5.jpg" alt="" onclick="myfunction(this)">
+            <img src="images/cake-6.jpg" alt="" onclick="myfunction(this)">
+            <img src="images/cake-7.jpg" alt="" onclick="myfunction(this)">
+            <img src="images/cake-man-1.jpg" alt="" onclick="myfunction(this)">
+            <img src="images/cake-man-3.jpg" alt="" onclick="myfunction(this)">
+
+
+        </div>
+        <div class="img-container">
+            <img src="images/cake-man-2.jpg"  id="imagebox">
+        </div>
+    </div>
+
+    <script>
+        function myfunction(smalImg){
+            var fullImg = document.getElementById("imagebox");
+            fullImg.src = smalImg.src;
+        }
+    </script>
+</body>
+</html>
