@@ -1,0 +1,110 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+/* <!-- ======================================section 1 header============================= -->   */
+.right-menu li{
+    display: inline-block;
+    margin-top: 30px !important;
+}
+.right-menu li .fab{
+    font-size: 18px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.navbar-brand img{
+    width: 160px;
+}
+.navbar-brand {
+    left: 50%;
+    top: 35px;
+    transform: translateX(-50%);
+    position: absolute;
+}
+.header{
+    background: #f5f6fc;
+    margin-bottom: 80px;
+}
+.navbar{
+    padding: 0 35px !important;
+}
+.navbar-toggler{
+    border: none !important;
+    outline: none !important;
+    padding: 0 !important;
+    margin-top: 50px;
+}
+.navbar-toggler .fa{
+    font-size: 30px;
+    cursor: pointer;
+}
+.banner-img{
+    margin: 80px 115px;
+    width: 60%;
+
+}
+.banner-img img{
+    width: 100%;
+    margin-bottom: -80px;
+}
+.banner{
+    position: relative;
+}
+.banner-title{
+    position: absolute;
+    left: 50%;
+    top:20%;
+}
+.banner-title h1{
+    font-size: 55px;
+    background: rgba(0, 0, 0, 0.75);
+    color: #fff;
+    line-height: 70px;
+    padding: 0 10px 0 10px;
+}
+/* <!-- ======================================section 2 Trends============================= -->   */
+.fashion-trends{
+    padding: 100px 0;
+}
+.fasion-box{
+    margin: 80px 0;
+}
+.title-style h1{
+    padding: 40px 0;
+}
+.title-style{
+    margin: 0 auto 80px;
+    height: 120px;
+    width: 80%;
+    max-width: 700px;
+    background: #fff;
+    position: relative;
+    box-shadow:  0 4px 5px 0 rgba(0, 0, 50, 1.5);
+}
+.title-style::after{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    top: -10px;
+    left: -10px;
+    z-index: -1;
+}
+.title-style::before{
+    content: '';
+    height: 100px;
+    width: 200px;
+    background-color: #f992a6;
+    position: absolute;
+    bottom: -10px;
+    right: -10px;
+    z-index: -1;
+}
+.trending-img{
+    position: relative;
+    margin: 15px;
+}
+.trending-img img{
+    width: 100%;
+}
